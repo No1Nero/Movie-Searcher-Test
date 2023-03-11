@@ -8,6 +8,7 @@ module.exports = {
       width: {
         'searchbarPC': '500px',
         'movieItemPC': '420px',
+        'movieItemMobile': '350px',
         'moviePagePC': '800px',
       },
       height: {

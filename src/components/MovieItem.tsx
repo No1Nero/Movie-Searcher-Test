@@ -10,7 +10,7 @@ interface MovieItemProps {
 export default function MovieItem({ movie }: MovieItemProps) {
     const { Title, Year, Type, Poster, imdbID } = movie;
     return (
-        <div className="border border-black rounded w-96 sm:w-movieItemPC h-44 bg-white flex p-1 mx-5 my-5">
+        <div className="border border-black rounded w-movieItemMobile sm:w-movieItemPC h-44 bg-white flex p-1 mx-5 my-5">
             {Poster === "N/A" ?
                 <div className="w-28 flex items-center justify-center">
                     <BsCameraVideoOff size={30} />
