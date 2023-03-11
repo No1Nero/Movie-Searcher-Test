@@ -87,7 +87,7 @@ export default function MoviePage({ movie }: { movie: IMovie }) {
 
 export const getServerSideProps = async (context: any) => {
     const { imdbID } = context.params;
-    const movieData = await axios.get(`http://www.omdbapi.com/?apikey=e15a5486&i=${imdbID}`)
+    const movieData = await axios.get(`https://www.omdbapi.com/?apikey=e15a5486&i=${imdbID}`)
         .then(response => response.data);
 
     return {

@@ -9,6 +9,6 @@ interface getMoviesByTitleProps {
 };
 
 export function getMoviesByTitle({ title, page, setState }: getMoviesByTitleProps) {
-    return axios.get<IMoviesInfo>(`http://www.omdbapi.com/?apikey=e15a5486&s=${title}&page=${page}`)
+    return axios.get<IMoviesInfo>(`https://www.omdbapi.com/?apikey=e15a5486&s=${title}&page=${page}`)
         .then(response => setState(response.data));
 };
